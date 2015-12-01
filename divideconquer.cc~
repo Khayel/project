@@ -1,0 +1,4 @@
+//divide and conquer solution to closest pair problem
+
+//distance between two points
+// d= squareroot( x2-x1)^2  + (y2-y1)^2 )
