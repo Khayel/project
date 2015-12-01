@@ -6,7 +6,7 @@
 #include<stdio.h>
 #include<string>
 #include<iostream>
-
+#include<sstream>
 struct Points
 {
   int x;
@@ -23,7 +23,8 @@ int main()
   int sign; // negative or positive
   std::cout<<"Number of points to generate: "<<std::endl;
   std::cin>>numpoints;
-  out.open("output.txt");
+  std::string filename = "output" + static_cast<std::ostringstream*>( &(std::ostringstream() << numpoints))->str() + ".txt"; // convert int to string for filename
+  out.open(filename.c_str());
   Points point[numpoints]; // array of points
    
   for(int i =0; i <numpoints; i++) 
