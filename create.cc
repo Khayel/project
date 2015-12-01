@@ -54,6 +54,6 @@ int main()
        out<<"{"<<point[i].x<<","<<point[i].y<<"}\n";//output to file {x,y}
      }
   out.close();
-   return 0;      
+  return 0;
 }
 
